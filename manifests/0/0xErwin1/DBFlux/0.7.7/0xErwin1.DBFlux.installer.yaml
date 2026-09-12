@@ -20,6 +20,9 @@ Installers:
     PortableCommandAlias: DBFlux
   InstallerUrl: https://github.com/0xErwin1/dbflux/releases/download/v0.7.7/dbflux-windows-amd64.zip
   InstallerSha256: 7544D911EA7E59C4185EB0A7C872A1B6560A70F20BCA07C9064936B360963BE4
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
 - InstallerLocale: en-US
   Architecture: x64
   InstallerType: inno
@@ -32,6 +35,9 @@ Installers:
   AppsAndFeaturesEntries:
   - ProductCode: '{D8A3E981-6A8D-4B8F-9E09-86D8DEB7A6F1}_is1'
   ElevationRequirement: elevatesSelf
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
 - InstallerLocale: en-US
   Architecture: x64
   InstallerType: inno
@@ -46,5 +52,8 @@ Installers:
   ElevationRequirement: elevatesSelf
   InstallationMetadata:
     DefaultInstallLocation: '%ProgramFiles%\DBFlux'
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
 ManifestType: installer
 ManifestVersion: 1.12.0
